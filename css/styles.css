@@ -8,6 +8,7 @@
   --futer-address-color: rgba(255, 255, 255, 0.6);
   --team-section-color: #f5f4fa;
   --hero-button-focus-color: #188ce8;
+  --svg-icon-color: #afb1b8;
 }
 
 body {
@@ -142,6 +143,12 @@ h3 {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -285,11 +292,42 @@ h3 {
 
 .team-profession {
   margin-top: 10px;
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.tean-soc-item + .tean-soc-item {
+  margin-left: 10px;
+}
+
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-soc-link {
+  width: 44px;
+  height: 44px;
+  background-color: var(--primery-white-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--svg-icon-color);
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--accent-color);
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus .team-soc-icon {
+  fill: var(--primery-white-color);
 }
 
 /* --------------------------footer----------------------- */
@@ -343,6 +381,50 @@ h3 {
   color: var(--accent-color);
 }
 
+.footer .container {
+  display: flex;
+}
+
+.footer-soc {
+  margin-top: 12px;
+  margin-left: 70px;
+}
+
+.footer-soc-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primery-white-color);
+  margin-bottom: 20px;
+}
+
+.footer-soc-item + .footer-soc-item {
+  margin-left: 10px;
+}
+
+.footer-soc-list {
+  display: flex;
+}
+
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--primery-white-color);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--accent-color);
+}
+
 /* ------------------------Portfolio-------------------------- */
 
 .filter {
@@ -381,6 +463,11 @@ h3 {
 
 /* ------------------Portfolio list--------------------- */
 
+.project-item:hover,
+.project-item:focus {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 .project-list {
   margin-top: 50px;
   display: flex;
@@ -389,8 +476,6 @@ h3 {
 
 .project-info {
   padding: 20px 24px 20px 24px;
-  border: 1px solid #eeeeee;
-  border-top: none;
 }
 
 .project-item {
