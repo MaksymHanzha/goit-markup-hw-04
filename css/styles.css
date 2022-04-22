@@ -128,12 +128,20 @@ h3 {
 
 .header-contacts {
   color: var(--primery-text-color);
+  display: flex;
 }
 
 .header-contacts:hover,
 .header-contacts:focus,
 .current {
   color: var(--accent-color);
+}
+
+.header-icon {
+  margin-right: 10px;
+  fill: currentColor;
+  display: flex;
+  align-items: center;
 }
 
 /* -------------------------hero------------------------- */
@@ -198,6 +206,16 @@ h3 {
 
 .characteristic-item + .characteristic-item {
   margin-left: 30px;
+}
+
+.characteristic-div {
+  display: flex;
+  height: 120px;
+  width: 270px;
+  background-color: var(--team-section-color);
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .characteristic-title {
@@ -328,6 +346,30 @@ h3 {
 .team-soc-link:hover,
 .team-soc-link:focus .team-soc-icon {
   fill: var(--primery-white-color);
+}
+
+/* --------------------------client----------------------- */
+
+.client-title {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--nav-item-color);
+}
+
+.client-item {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* --------------------------footer----------------------- */
