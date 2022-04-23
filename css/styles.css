@@ -382,7 +382,6 @@ h3 {
   fill: var(--svg-icon-color);
 }
 
-
 .client-link:hover,
 .client-link:focus {
   border: 1px solid var(--accent-color);
@@ -527,9 +526,11 @@ h3 {
 
 /* ------------------Portfolio list--------------------- */
 
-.project-item:hover,
-.project-item:focus {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.project-link:hover,
+.project-link:focus {
+  display: block;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-list {
@@ -540,6 +541,8 @@ h3 {
 
 .project-info {
   padding: 20px 24px 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .project-item {
