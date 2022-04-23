@@ -350,6 +350,15 @@ h3 {
 
 /* --------------------------client----------------------- */
 
+.client-list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.client-item + .client-item {
+  margin-left: 30px;
+}
+
 .client-title {
   margin-left: auto;
   margin-right: auto;
@@ -361,15 +370,28 @@ h3 {
   color: var(--nav-item-color);
 }
 
-.client-item {
+.client-link {
   display: flex;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--svg-icon-color);
   box-sizing: border-box;
   border-radius: 4px;
   justify-content: center;
   align-items: center;
+  fill: var(--svg-icon-color);
+}
+
+
+.client-link:hover,
+.client-link:focus {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.client-link:hover,
+.client-link:focus .client-icon {
+  fill: var(--accent-color);
 }
 
 /* --------------------------footer----------------------- */
